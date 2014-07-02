@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductViewController">
             <connections>
+                <outlet property="productImage" destination="O2w-5o-evf" id="4wd-tj-QkA"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -14,12 +15,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_page" id="O2w-5o-evf">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="233"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ez9-5x-cye">
-                    <rect key="frame" x="-40" y="0.0" width="366" height="568"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
-                        <imageView contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_page" id="8P3-Y4-44R">
-                            <rect key="frame" x="40" y="0.0" width="337" height="568"/>
+                        <imageView contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_page" id="8P3-Y4-44R">
+                            <rect key="frame" x="-20" y="277" width="358" height="416"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </imageView>
                     </subviews>

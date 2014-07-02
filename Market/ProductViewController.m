@@ -9,6 +9,7 @@
 #import "ProductViewController.h"
 
 @interface ProductViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
 
 @end
 
