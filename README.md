@@ -1,7 +1,7 @@
 Market [iOS App]
 ======
 
-  Group Project by @kelly @phurbu and @daniel
+  Group Project by /cc Kelly, Phurbu and Daniel
   
 #### Community based selling/trading marketplace.
     
