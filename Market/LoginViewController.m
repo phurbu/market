@@ -8,7 +8,6 @@
 
 #import "LoginViewController.h"
 #import "NavViewController.h"
-#import "HomeViewController.h"
 #import "ProductViewController.h"
 
 
@@ -77,10 +76,10 @@
     [self.LoadingIndicator stopAnimating];
     if ([[self.UsernameField.text lowercaseString] isEqualToString:@"1"] && [[self.PasswordField.text lowercaseString] isEqualToString:@"1"]) {
         
-        UIViewController *homeviewcontroller = [[HomeViewController alloc] init];
-        homeviewcontroller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        UIViewController *navviewcontroller = [[NavViewController alloc] init];
+        navviewcontroller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         
-        [self presentViewController:homeviewcontroller animated:YES completion:nil];
+        [self presentViewController:navviewcontroller animated:YES completion:nil];
         
         
     } else {

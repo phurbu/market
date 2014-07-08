@@ -12,9 +12,7 @@
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UIScrollView *HomeFeedScrollView;
-@property (weak, nonatomic) IBOutlet UIScrollView *YahooScrollView;
 - (IBAction)onProfileBtn:(id)sender;
-- (IBAction)onYahooFilterButton:(id)sender;
 
 @end
 
@@ -34,11 +32,7 @@
     [super viewDidLoad];
     self.HomeFeedScrollView.
     contentSize =
-    CGSizeMake(320,1105);
-    
-    self.YahooScrollView.
-    contentSize =
-    CGSizeMake(320,800);
+    CGSizeMake(320,1005);
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -53,22 +47,5 @@
     UIViewController *vc = [[ProductViewController alloc] init];
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:vc animated:YES completion:nil];
-}
-
-- (IBAction)onYahooFilterButton:(id)sender {
-    if (self.HomeFeedScrollView.alpha == 0)
-    {
-        [UIView animateWithDuration:1 animations:^{
-            self.HomeFeedScrollView.alpha = 1;
-        }];
-        
-
-        
-    } else {
-        [UIView animateWithDuration:1 animations:^{
-            self.HomeFeedScrollView.alpha = 0;
-        }];
-    
-}
 }
 @end

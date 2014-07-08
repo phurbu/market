@@ -9,7 +9,6 @@
 #import "ProductViewController.h"
 
 @interface ProductViewController ()
-- (IBAction)onBackButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;
 
 @end
@@ -37,8 +36,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onBackButton:(id)sender {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 @end
