@@ -9,6 +9,7 @@
 #import "ProductViewController.h"
 
 @interface ProductViewController ()
+- (IBAction)onBackButton:(id)sender;
 
 @end
 
@@ -35,4 +36,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onBackButton:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
