@@ -10,6 +10,7 @@
 
 @interface ProductViewController ()
 - (IBAction)onBackButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *productImage;
 
 @end
 

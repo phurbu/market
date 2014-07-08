@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
+                <outlet property="CameraBtn" destination="aHH-nx-VUJ" id="OL9-ue-hvs"/>
                 <outlet property="HomeFeedScrollView" destination="rYN-pV-gRE" id="B4B-4o-A9w"/>
                 <outlet property="YahooScrollView" destination="smX-Bi-UNl" id="veK-gR-QfR"/>
                 <outlet property="view" destination="1" id="3"/>
@@ -116,6 +117,7 @@
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_img" id="DRg-Xo-o3R">
                                     <rect key="frame" x="0.0" y="64" width="320" height="268"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <gestureRecognizers/>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info" id="jaQ-Tl-ph2">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
@@ -137,12 +139,14 @@
                                         <attributedString key="attributedTitle"/>
                                     </state>
                                     <state key="highlighted" image="profile_img_2"/>
-                                    <connections>
-                                        <action selector="onProfileBtn:" destination="-1" eventType="touchUpInside" id="dhG-Ke-fpj"/>
-                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="i0p-AD-lIW" appends="YES" id="G9e-Kd-Zpg"/>
+                                <outletCollection property="gestureRecognizers" destination="jrh-ec-M0C" appends="YES" id="tgH-fF-IBx"/>
+                            </connections>
                         </view>
                         <view contentMode="scaleToFill" id="sx3-4K-qeb">
                             <rect key="frame" x="0.0" y="456" width="320" height="324"/>
@@ -444,12 +448,25 @@
                     </state>
                     <state key="selected" image="photo_btn_s"/>
                     <state key="highlighted" image="photo_btn_s"/>
+                    <connections>
+                        <action selector="onCameraBtn:" destination="-1" eventType="touchUpInside" id="3O8-bb-kd7"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.8025948660714286" green="0.33351343131167321" blue="0.32963500708524646" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer numberOfTapsRequired="2" numberOfTouchesRequired="2" id="jrh-ec-M0C">
+            <connections>
+                <action selector="onDoubleTapProduct:" destination="-1" id="fMf-oE-SWm"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="i0p-AD-lIW">
+            <connections>
+                <action selector="onTapProduct:" destination="-1" id="4JX-dM-YDo"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="dots" width="48" height="11"/>

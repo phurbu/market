@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8D9BD759-35B2-42FB-8EA9-CD660FB8DAD6</string>
+	<string>6C8DAB0C-AF19-4D63-97CF-B8295F5A8C0A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Market</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5FDEDDC9-A788-479E-9986-808F48FB3499</key>
+		<key>D50755FB-5989-4E2B-AF52-867D18EF634D</key>
 		<string>https://github.com/phurbu/market.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Market.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5FDEDDC9-A788-479E-9986-808F48FB3499</key>
+		<key>D50755FB-5989-4E2B-AF52-867D18EF634D</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5FDEDDC9-A788-479E-9986-808F48FB3499</string>
+	<string>D50755FB-5989-4E2B-AF52-867D18EF634D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5FDEDDC9-A788-479E-9986-808F48FB3499</string>
+			<string>D50755FB-5989-4E2B-AF52-867D18EF634D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>market</string>
 		</dict>
