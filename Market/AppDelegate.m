@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
-#import 
+#import "MobileCoreServices/MobileCoreServices.h"
+#import "AssetsLibrary/AssetsLibrary.h"
+#import "CameraViewController.h"
 
 @implementation AppDelegate
 
@@ -18,6 +20,14 @@
     // Override point for customization after application launch.
     LoginViewController *vc = [[LoginViewController alloc] init];
     self.window.rootViewController = vc;
+    
+    if([self isCameraAvailable]){
+        NSLog(@"Camera is available.");
+    }else{
+        NSLog(@"Camera is not available");
+    }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -50,5 +60,35 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//check if the camera is available
+- (BOOL) isCameraAvailable {
+    return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
+}
+
+// check the camera support taking photos
+- (BOOL) doesCameraSupportTakingPhotos{
+    return [self cameraSupportsMedia:(__bridge NSString*)kUTTypeImage sourceType: UIImagePickerControllerSourceTypeCamera];
+}
+
+- (BOOL) cameraSupportsMedia :(NSString *) paramMediaType sourceType:(UIImagePickerControllerSourceType)paramSourceType{
+    __block bool result = NO;
+    if([paramMediaType length] == 0){
+        NSLog(@"Medis type is empty");
+        return NO;
+    }
+    NSArray *availableMediaTypes = [UIImagePickerController availableCaptureModesForCameraDevice:paramSourceType];
+    [availableMediaTypes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        NSString *mediaType = (NSString *)obj;
+        if([mediaType isEqualToString:paramMediaType]){
+            result =YES;
+            *stop = YES;
+        }
+    }];
+    
+    return result;
+    
+}
+
 
 @end
