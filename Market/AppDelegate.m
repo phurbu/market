@@ -8,24 +8,34 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+<<<<<<< HEAD
 #import "HomeViewController.h"
+=======
+>>>>>>> FETCH_HEAD
 #import "MobileCoreServices/MobileCoreServices.h"
 #import "AssetsLibrary/AssetsLibrary.h"
 #import "CameraViewController.h"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> FETCH_HEAD
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+<<<<<<< HEAD
     
     // Root should be login view.
     //LoginViewController *vc = [[LoginViewController alloc] init];
     //self.window.rootViewController = vc;
     
     HomeViewController *vc = [[HomeViewController alloc] init];
+=======
+    LoginViewController *vc = [[LoginViewController alloc] init];
+>>>>>>> FETCH_HEAD
     self.window.rootViewController = vc;
     
     if([self isCameraAvailable]){
