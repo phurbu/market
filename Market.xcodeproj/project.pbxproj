@@ -29,6 +29,26 @@
 		0F88F6A61961021100EC6FDD /* ProductViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F88F6A41961021100EC6FDD /* ProductViewController.xib */; };
 		0F88F6AA196105F100EC6FDD /* NavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F88F6A8196105F100EC6FDD /* NavViewController.m */; };
 		0F88F6AB196105F100EC6FDD /* NavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F88F6A9196105F100EC6FDD /* NavViewController.xib */; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		E604014D19721EFA003F70AC /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E604014C19721EFA003F70AC /* CommunityViewController.m */; };
+=======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+		6CC9737C1964AB7300696E78 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC9737A1964AB7300696E78 /* ProfileViewController.m */; };
+		6CC9737D1964AB7300696E78 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC9737B1964AB7300696E78 /* ProfileViewController.xib */; };
+		6CC973811964ADA600696E78 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CC9737F1964ADA600696E78 /* CameraViewController.m */; };
+		6CC973821964ADA600696E78 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CC973801964ADA600696E78 /* CameraViewController.xib */; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +93,29 @@
 		0F88F6A7196105F100EC6FDD /* NavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavViewController.h; sourceTree = "<group>"; };
 		0F88F6A8196105F100EC6FDD /* NavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavViewController.m; sourceTree = "<group>"; };
 		0F88F6A9196105F100EC6FDD /* NavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+		E604014B19721EFA003F70AC /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		E604014C19721EFA003F70AC /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+=======
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+		6CC973791964AB7300696E78 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		6CC9737A1964AB7300696E78 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		6CC9737B1964AB7300696E78 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		6CC9737E1964ADA600696E78 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		6CC9737F1964ADA600696E78 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		6CC973801964ADA600696E78 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
+=======
+>>>>>>> FETCH_HEAD
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +216,8 @@
 		0F88F697196101CB00EC6FDD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E604014B19721EFA003F70AC /* CommunityViewController.h */,
+				E604014C19721EFA003F70AC /* CommunityViewController.m */,
 				0F88F692196101AC00EC6FDD /* LoginViewController.h */,
 				0F88F693196101AC00EC6FDD /* LoginViewController.m */,
 				0F88F694196101AC00EC6FDD /* LoginViewController.xib */,
@@ -188,6 +233,12 @@
 				0F88F6A7196105F100EC6FDD /* NavViewController.h */,
 				0F88F6A8196105F100EC6FDD /* NavViewController.m */,
 				0F88F6A9196105F100EC6FDD /* NavViewController.xib */,
+				6CC973791964AB7300696E78 /* ProfileViewController.h */,
+				6CC9737A1964AB7300696E78 /* ProfileViewController.m */,
+				6CC9737B1964AB7300696E78 /* ProfileViewController.xib */,
+				6CC9737E1964ADA600696E78 /* CameraViewController.h */,
+				6CC9737F1964ADA600696E78 /* CameraViewController.m */,
+				6CC973801964ADA600696E78 /* CameraViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -267,8 +318,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CC973821964ADA600696E78 /* CameraViewController.xib in Resources */,
 				0F88F66E1961019D00EC6FDD /* InfoPlist.strings in Resources */,
 				0F88F6AB196105F100EC6FDD /* NavViewController.xib in Resources */,
+				6CC9737D1964AB7300696E78 /* ProfileViewController.xib in Resources */,
 				0F88F6761961019D00EC6FDD /* Images.xcassets in Resources */,
 				0F88F696196101AC00EC6FDD /* LoginViewController.xib in Resources */,
 				0F88F69C196101DF00EC6FDD /* HomeViewController.xib in Resources */,
@@ -292,11 +345,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E604014D19721EFA003F70AC /* CommunityViewController.m in Sources */,
 				0F88F6A51961021100EC6FDD /* ProductViewController.m in Sources */,
 				0F88F6A0196101FA00EC6FDD /* WishlistViewController.m in Sources */,
+				6CC9737C1964AB7300696E78 /* ProfileViewController.m in Sources */,
 				0F88F6741961019D00EC6FDD /* AppDelegate.m in Sources */,
 				0F88F6701961019D00EC6FDD /* main.m in Sources */,
 				0F88F695196101AC00EC6FDD /* LoginViewController.m in Sources */,
+				6CC973811964ADA600696E78 /* CameraViewController.m in Sources */,
 				0F88F69B196101DF00EC6FDD /* HomeViewController.m in Sources */,
 				0F88F6AA196105F100EC6FDD /* NavViewController.m in Sources */,
 			);
@@ -499,6 +555,7 @@
 				0F88F68E1961019D00EC6FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F88F68F1961019D00EC6FDD /* Build configuration list for PBXNativeTarget "MarketTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +564,7 @@
 				0F88F6911961019D00EC6FDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
